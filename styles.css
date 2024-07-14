@@ -1,0 +1,460 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #e5533d;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+}
+
+/* Color Palette Section */
+#color-palette-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.seasonal-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.seasonal-photos img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.color-palette {
+    flex: 1;
+    text-align: center;
+}
+
+.big-palette-photo {
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Discover Your Perfect Palette Section */
+#discover-palette-section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 4em 2em;
+    background: linear-gradient(135deg, #ff6347, #ffde59, #59ff9b, #59a3ff);
+    margin-bottom: 40px; /* Added margin-bottom */
+}
+
+#discover-palette-section .content {
+    position: relative;
+    z-index: 1;
+}
+
+#discover-palette-section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#discover-palette-section p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 1em;
+}
+
+#discover-palette-section button {
+    background-color: #fff;
+    color: #ff6347;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#discover-palette-section button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #e5533d;
+}
+
+#subscription {
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2em auto;
+    width: 80%;
+}
+
+#subscription button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#subscription button:hover {
+    background-color: #e5533d;
+}
+
+#subscription-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1em;
+}
+
+.subscription-box {
+    background-color: #ffde59;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.subscription-box h4 {
+    margin: 0.5em 0;
+}
+
+#options-section {
+    background-color: #fff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2em auto;
+    width: 80%;
+}
+
+#options-section button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#options-section button:hover {
+    background-color: #e5533d;
+}
+
+/* Benefits and Impact Section */
+#benefits {
+    text-align: center;
+    padding: 20px; /* Reduced padding */
+    color: hsl(0, 0%, 3%);
+    margin-bottom: 40px;
+}
+
+.benefit h2 {
+    margin-bottom: 40px;
+}
+
+.benefits-container {
+    max-width: 500px; /* Reduced max-width */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.benefit h3 {
+    font-size: 1.5em; /* Adjusted font size */
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1em; /* Adjusted font size */
+    margin-bottom: 0;
+}
+
+.benefit img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0.5em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content button:hover {
+    background-color: #e5533d;
+}
+
+#choose-box-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#choose-box-btn:hover {
+    background-color: #e5533d;
+}
+
+.subscription-box {
+    background-color: #ffde59;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.subscription-box h4 {
+    margin: 0.5em 0;
+}
+
+.subscription-box p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+#subscription-modal p {
+    margin: 1em 0;
+    color: #666;
+}
+
+/* Sliding Effect for Reviews */
+.review-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.review {
+    background-color: #ffde59;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.review img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+    }
+
+    .header-left {
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    #color-palette-section {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .seasonal-photos {
+        flex-direction: row;
+        gap: 1em;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .seasonal-photos img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .color-palette {
+        text-align: center;
+    }
+
+    .big-palette-photo {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .review-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .review {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+}
